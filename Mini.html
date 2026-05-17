@@ -1,21 +1,82 @@
-<html doctype>
-    <head>
-        <meta charset="UTF-8">
-        <title>Bootcamp Miniproject</title>
-        <link rel="miniproj" href="miniproj.css">
-    </head>
-    <body>
-        <h1>Hawi</h1>
-        <p>I am a second year electrical school student. I am interested in cs or sw and enjoy working with technology</p>
-       <img src="hm.jpg" alt="my photo">
-        <form>
-            <label>Name: </label><br>
-            <input type="Hawi"><br><br>
-            <label>Email:</label><br>
-            <input type="hawimek46@gmail.com"><br>
-            <label>Message:</label><br>
-            <textarea rows="4" cols="30"></textarea><br>
-            <button type="submit">submit</button>
-        </form>
-    </body>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mahlet Fashion</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <header>
+
+    <nav>
+      <h1>Mahlet Fashion</h1>
+
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#products">Products</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+
+    <div class="hero">
+      <h2>Modern Fashion Collection</h2>
+      <p>Discover trendy and elegant outfits.</p>
+      <button onclick="scrollProducts()">Shop Now</button>
+    </div>
+
+  </header>
+
+  <section id="products" class="products">
+
+    <h2>Featured Products</h2>
+
+    <div class="product-container">
+
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1529139574466-a303027c1d8b?q=80&w=687" alt="">
+        <h3>Elegant Dress</h3>
+        <p>2500 ETB</p>
+        <button onclick="addToCart()">Add to Cart</button>
+      </div>
+
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1483985988355-763728e1935b?q=80&w=687" alt="">
+        <h3>Street Style</h3>
+        <p>3200 ETB</p>
+        <button onclick="addToCart()">Add to Cart</button>
+      </div>
+
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1496747611176-843222e1e57c?q=80&w=687" alt="">
+        <h3>Luxury Outfit</h3>
+        <p>4500 ETB</p>
+        <button onclick="addToCart()">Add to Cart</button>
+      </div>
+
+    </div>
+
+  </section>
+
+  <section id="contact" class="contact">
+
+    <h2>Contact Us</h2>
+
+    <input type="text" placeholder="Your Name">
+    <input type="email" placeholder="Your Email">
+    <textarea placeholder="Your Message"></textarea>
+
+    <button>Send Message</button>
+
+  </section>
+
+  <footer>
+    <p>© 2026 Mahlet Fashion</p>
+  </footer>
+
+  <script src="script.js"></script>
+
+</body>
 </html>
